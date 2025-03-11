@@ -1,0 +1,23 @@
+-- 创建城市表
+CREATE TABLE IF NOT EXISTS city (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL UNIQUE,
+    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- 创建路线表
+CREATE TABLE IF NOT EXISTS route (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    from_city_id INT NOT NULL,
+    to_city_id INT NOT NULL,
+    transport_type VARCHAR(20) NOT NULL,
+    route_no VARCHAR(20) NOT NULL,
+    departure TIME NOT NULL,
+    arrival TIME NOT NULL,
+    fare DECIMAL(10,2) NOT NULL,
+    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (from_city_id) REFERENCES city(id),
+    FOREIGN KEY (to_city_id) REFERENCES city(id)
+); 
