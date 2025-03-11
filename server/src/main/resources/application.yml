@@ -1,8 +1,10 @@
 spring:
   datasource:
-    url: jdbc:mysql://这里放数据库地址/ntas
-    username: 这里放数据库用户名
-    password: 这里放数据库密码
+    # 这里填写数据库地址形如jdbc:p6spy:mysql://192.168.153.132:3306/demo?useSSL=false&serverTimezone=UTC
+    # 此处为随机加密后的
+    url: mpw:b2zaemQAyLFeNdElXJ0H/Cul5VA4zlUezq5lr4zEyF+S0LjuLIsIFwTucZ+xQkEb
+    username: root
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
       # ??
