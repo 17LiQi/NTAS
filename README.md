@@ -17,3 +17,26 @@
 - 后端代码依旧不够清晰简洁易读
 - 前端代码比较臃肿
 - 内存管理逻辑还未优化
+***
+# National Traffic Advisory Simulation (NTAS)
+
+## Basic Introduction
+- This project is a simulated national traffic management system built with a MySQL database, Spring Boot backend, and Vue frontend.
+- Basic Features of the Project:
+  1. Display all traffic routes.
+  2. Query the optimal route (with decision options for shortest time or shortest path).
+  3. Query adjacent stations.
+  4. Add/remove routes.
+  5. Add/remove cities.
+- Logical Principle: Java data structure graphs and adjacency lists.
+
+## Features
+- Complete project development process (Database -> Backend -> Frontend).
+- Full Spring Boot three-tier architecture: Controller (Control Layer), Service (Business Layer), and Repository/DAO (Persistence Layer).
+- Simplified code with MyBatis Plus.
+
+## Existing Issues:
+- All routes and cities are manually added.
+- The backend code is still not clear, concise, and readable enough.
+- The frontend code is relatively bloated.
+- Memory management logic has not been optimized yet.
