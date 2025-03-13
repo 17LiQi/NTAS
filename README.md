@@ -1,4 +1,4 @@
-# 全国交通管理系统NTMS
+# 全国交通查询模拟-NationalTrafficAdvisorySimulation-NTAS
 ## 基本介绍
 - 该项目基于mysql数据库,springboot后端以及vue前端编写的模拟全国交通管理系统
 - 项目基本功能:
